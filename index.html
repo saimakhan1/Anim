@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animations</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style>
+		 .wave-container {
+            display: inline-block;
+        }
+
+        .wave-container img {
+            width: 200px; /* Adjust size as needed */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .wave-container:hover img {
+            animation: wave 0.5s infinite alternate ease-in-out;
+        }
+
+        @keyframes wave {
+            0% { transform: rotate(-10deg); }
+            100% { transform: rotate(10deg); }
+        }
+	</style>
+</head>
+	<body>
+		<div class="menu1">
+			<nav class="menu-items">
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">services</a>
+						<ul>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">Graphic Design</a></li>
+							<li><a href="#">Android </a></li>
+						</ul>
+
+					</li>
+					<li><a href="#">courses</a>
+
+						<ul>
+							<li><a href="#">Web Course</a>
+								<ul>
+									<li><a href="#">Web Design</a></li>
+									<li><a href="#">Web Development</a></li>
+									<li><a href="#">WordPress</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Course Android </a></li>
+							<li><a href="#">Photography</a></li>
+							<li><a href="#">SEO</a></li>
+							<li><a href="#">Graphics</a>
+								<ul>
+									<li><a href="#">UX Design</a></li>
+									<li><a href="#">UI Design</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="logo">
+				<p>Logo</p>
+			</div>
+		</div>
+
+
+		<div class="page1">
+
+			<div class="box1">
+				<h1>Animations</h1>
+				<h2>Please hover over each item to see the actions</h2>
+
+				<div class="card1">
+					<div class="person">
+						<img src="./images/p1.png" alt="p1">
+						<div class="description">
+							<h3>About Laura</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisici.</p>
+						</div>
+					</div>
+
+					<div class="overlay">
+						<p>Laura Don</p><br>
+						<p>Age: 2 years</p>
+					</div>
+
+				</div>
+
+
+			</div>
+			<button class="b1">Click Here</button>
+
+			<button class="b2">Click Here</button>
+
+			<div class="box23">
+				<div class="box2">
+				<img src="./images/hand1.png">
+				
+				</div>
+				<div class="box3">
+					
+					<img src="./images/pizza.png">
+				</div>
+				<div class="wave-container">
+			        <img src="images/hand1.png" alt="Waving Image">
+			    </div>
+			</div>
+
+
+					
+		</div>
+
+
+
+	</body>
+</html>
